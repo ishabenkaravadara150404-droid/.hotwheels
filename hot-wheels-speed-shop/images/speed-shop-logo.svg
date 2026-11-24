@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="flameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffc400" />
+      <stop offset="50%" stop-color="#ff5500" />
+      <stop offset="100%" stop-color="#e60012" />
+    </linearGradient>
+  </defs>
+  <!-- Flame background ribbon -->
+  <path d="M 10,80 Q 50,95 100,75 Q 150,55 200,80 Q 260,95 320,70 Q 360,55 390,75 Q 360,40 300,55 Q 240,40 180,55 Q 120,30 80,50 Z" fill="url(#flameGradient)" opacity="0.8" />
+  <!-- Text -->
+  <text x="50%" y="62" text-anchor="middle" font-family="'Oswald', sans-serif" font-size="38" font-weight="bold" font-style="italic" fill="#ffffff" letter-spacing="3">
+    SPEED SHOP
+  </text>
+  <text x="50%" y="88" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#ffc400" letter-spacing="4">
+    HOT WHEELS TOY STORE
+  </text>
+</svg>

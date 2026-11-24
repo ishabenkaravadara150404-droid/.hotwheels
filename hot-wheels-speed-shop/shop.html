@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Wheels – Speed Shop | Shop All Cars</title>
+  
+  <!-- Bootstrap 5 CSS (Official CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><i class="fa-solid fa-flag-checkered me-1"></i> Hot Wheels Speed Shop • Shop Collection</div>
+      <div><i class="fa-solid fa-tag me-1"></i> Special Student Pricing on all 1:64 Scale Models!</div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-custom" href="index.html">
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        SPEED <span>SHOP</span>
+      </a>
+
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="fa-solid fa-bars fs-2 text-warning"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <a href="cart.html" class="cart-icon-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+            <span class="cart-badge cart-count-badge">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Racing Line Accent -->
+  <div class="racing-line"></div>
+
+  <!-- Page Header -->
+  <div class="py-4 text-center" style="background-color: #12141a; border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      <span class="section-badge"><i class="fa-solid fa-warehouse me-1"></i> Complete Garage</span>
+      <h1 class="brand-font display-6 mb-1">SHOP HOT WHEELS <span>CARS</span></h1>
+      <p class="text-muted small mb-0">Browse through 14 authentic toy car castings. Use search, filters, and sorting below.</p>
+    </div>
+  </div>
+
+  <!-- Main Shop Container -->
+  <main class="py-5">
+    <div class="container">
+
+      <!-- Search, Category Filters, and Sort Controls -->
+      <div class="shop-controls-panel">
+        <div class="row g-3 align-items-center">
+          
+          <!-- Live Search Bar -->
+          <div class="col-md-4">
+            <div class="input-group">
+              <span class="input-group-text bg-dark border-secondary text-warning">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input 
+                type="text" 
+                id="search-input" 
+                class="form-control form-control-racing" 
+                placeholder="Search car name or category..."
+              >
+            </div>
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div class="col-md-5">
+            <div class="d-flex flex-wrap gap-2">
+              <button class="filter-pill-btn active" data-category="All">All</button>
+              <button class="filter-pill-btn" data-category="Sports Cars">Sports Cars</button>
+              <button class="filter-pill-btn" data-category="Supercars">Supercars</button>
+              <button class="filter-pill-btn" data-category="Muscle Cars">Muscle Cars</button>
+              <button class="filter-pill-btn" data-category="Monster Trucks">Monster Trucks</button>
+            </div>
+          </div>
+
+          <!-- Sort Dropdown -->
+          <div class="col-md-3">
+            <select id="sort-select" class="form-select form-select-racing">
+              <option value="default">Sort by: Default</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="popular">Most Popular First</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Results Count Info -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="text-muted small" id="results-count">
+          Showing 14 Hot Wheels cars
+        </div>
+      </div>
+
+      <!-- Responsive Product Grid -->
+      <div class="row" id="shop-products-container">
+        <!-- Products dynamically loaded by renderShopProducts() in script.js -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="navbar-brand-custom mb-3">
+            <i class="fa-solid fa-fire-flame-curved"></i> SPEED <span>SHOP</span>
+          </h5>
+          <p class="text-muted small">
+            First Year BCA Student Project: An interactive toy car e-commerce front-end application built with HTML5, CSS3, Bootstrap 5, and JavaScript.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop All Cars</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="cart.html">View Shopping Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="footer-heading">Features Demonstrated</h6>
+          <ul class="footer-links text-muted small">
+            <li>• Live Keyword Search (JavaScript)</li>
+            <li>• Category Filter Buttons</li>
+            <li>• Price & Popularity Sorting</li>
+            <li>• LocalStorage Shopping Cart</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">© 2026 <strong>Hot Wheels – Speed Shop</strong>. Made for BCA College Project Presentation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JavaScript Bundle (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Products Database -->
+  <script src="js/products.js"></script>
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
